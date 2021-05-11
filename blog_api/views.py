@@ -86,7 +86,7 @@ class PostListDetailFilter(generics.ListAPIView):
 class CreatePost(APIView):
     parser_classes = [MultiPartParser , FormParser]
     
-    def post(self, request , format=None):x
+    def post(self, request , format=None):
         print(request.data)
         serializer = PostSerializer(data=request.data)
 
